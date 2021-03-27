@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="admin.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand">
+                <span class="ti-unlike"></span>
+                <span>Admin Deshboard</span>
+            </h3>
+
+            <label for="sidebar-toggle">
+                <box-icon class="menu" name='menu'></box-icon>
+            </label>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                
+                        <span>
+                            <box-icon class="home" name='home'></box-icon>
+                        </span>
+                        <span><a href="#section-title">Home</a></span>
+                    
+                </li>
+                <li>
+                
+                        <span>
+                            <box-icon class="profile" name='smile'></box-icon>
+                        </span>
+                        <span><a href="#profile">profile</a></span>
+                
+                </li>
+               
+
+                <li>
+                
+                        <span>
+                            <box-icon class="task" name='task'></box-icon>
+                        </span>
+                        <span ><a href="#todo-list">To Do list</a></span>
+                    
+                </li>
+                <li>
+                    
+                        <span><box-icon name='image-alt'></box-icon></span>
+                       <span> <a href="#Gallery">Galarry</a></span>
+                
+                </li>
+                <li>
+                    
+                        <span>
+                            <box-icon class="logout" name='log-out'></box-icon>
+                        </span>
+                      <span>  <a href="login.html">Log Out</a></span>
+            
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="search-wrapper">
+                <box-icon class="search-wrap" name='search'></box-icon>
+                <input type="search" placeholder="search">
+            </div>
+            <div class="social-icons">
+                <span>
+                    <box-icon name='bell'></box-icon>
+                </span>
+                <span>
+                    <box-icon name='comment-detail'></box-icon>
+                </span>
+                <div></div>
+            </div>
+        </header>
+        <main>
+            <h2 class="desh-title">Overview</h2>
+            <div class="desh-cards">
+                <div class="card-single">
+                    <div class="card-body">
+                        <Span>
+                            <box-icon name='briefcase-alt'></box-icon>
+                        </Span>
+                        <Div>
+                            <h5>Total Project</h5>
+                            <h4> 764</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View All</a>
+                    </div>
+
+                </div>
+                <div class="card-single">
+                    <div class="card-body">
+                        <Span>
+                            <box-icon name='refresh'></box-icon>
+                        </Span>
+
+                        <Div>
+                            <h5>Completed</h5>
+                            <h4>500</h4>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View All</a>
+                    </div>
+
+                </div>
+                <div class="card-single">
+                    <div class="card-body">
+                        <Span>
+                            <box-icon name='checkbox-checked'></box-icon>
+                        </Span>
+                        <Div>
+                            <h5>Proceed</h5>
+                            <h4>264</h4>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View All</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="work section" id="work">
+                <h2 id="section-title">Home</h2>
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="img/project5.png" alt="">
+                        <h1>Personal portfolio</h1>
+                    </div>
+
+                    <div class="work__img">
+                        <img src="img/project2.png" alt="">
+                        <h1>Final year project "cybercrime system"</h1>
+                    </div>
+                    <div class="work__img">
+                        <img src="img/project3.png" alt="">
+                        <h1>gym website</h1>
+                    </div>
+                    <div class="work__img">
+                        <img src="img/project4.png" alt="">
+                        <a href="https://faizan16990.github.io/QuizGame/">
+                            <h1>Quiz Game</h1>
+                        </a>
+
+                    </div>
+                    <div class="work__img">
+                        <img src="img/project1.png" alt="">
+                        <h1>Food ordering Website</h1>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="profile-section">
+            <h2 id="profile">profile</h2>
+                <div class="activity-card">
+                    <h3>Recent activity</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>DOB</th>
+                                <th>Mobile</th>
+                                <th>Email</th>
+                                <th>pic</th>
+                                <th>status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mohd</td>
+                                <td>Farzan</td>
+                                <td>01-01-1999</td>
+                                <td>928329836</td>
+                                <td>Farzan@gmail.com</td>
+                                <td class="profile">
+                                    <div class="img-1"></div>
+                                </td>
+                                <td>
+                                    <span class="badge success">Success</span>
+                                </td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td>Mohd</td>
+                                <td>Sawwod</td>
+                                <td>01-01-1998</td>
+                                <td>928329836</td>
+                                <td>sawood@gmail.com</td>
+                                <td>
+                                    <div class="img-2"></div>
+                                </td>
+                                <td>
+                                    <span class="badge-success">Success</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>abdul</td>
+                                <td>rehman</td>
+                                <td>01-01-2000</td>
+                                <td>928329836</td>
+                                <td>mohd0116faizan@gmail.com</td>
+                                <td>
+                                    <div class="img-3"></div>
+                                </td>
+                                <td>
+                                    <span class="badge-success">Success</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mohd</td>
+                                <td>Faizan</td>
+                                <td>01-01-1998</td>
+                                <td>8928329836</td>
+                                <td>mohd0116@gmail.c0m</td>
+                                <td>
+                                    <div class="img-4"></div>
+                                </td>
+                                <td>
+                                    <span class="badge-success">Success</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Farzan</td>
+                                <td>Raza</td>
+                                <td>01-11-1998</td>
+                                <td>928329836</td>
+                                <td>Email</td>
+                                <td>
+                                    <div class="img-5"></div>
+                                </td>
+                                <td>
+                                    <span class="badge-success">Success</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="summary">
+                    <div class="summary-card">
+                        <span></span>
+                        <div>
+                            <h5></h5>
+                        </div>
+
+                    </div>
+                    <div class="birthday-card"></div>
+
+                </div>
+
+            </section>
+    
+
+        <section class="todolist">
+            <div class="wrapper">
+            <h2 id="todo-list">ToDo List</h2>
+                <div class="inputField">
+                    <input type="text" placeholder="Add your new todo">
+                    <button><i class="fas fa-plus"></i></button>
+                </div>
+                <ul class="todoList">
+                    <!-- data are comes from local storage -->
+                </ul>
+                <div class="footer">
+                    <span>You have <span class="pendingTasks"></span> pending tasks</span>
+                    <button>Clear All</button>
+                </div>
+            </div>
+        </section>
+        </main>
+        <section class="gallery">
+            <div class="container">
+                <div class="title">
+                    <h1 id="Gallery">Gallery</h1>
+                </div>
+                <div class="gallery-items">
+                    <div class="item">
+                        <img src="img/4.webp" alt="gallery" />
+                        <div class="caption">
+                            1  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/3.webp" id="kkk" alt="gallery" />
+                        <div class="caption">
+                            2
+                            <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/6.webp" alt="gallery" />
+                        <div class="caption">
+                            3
+                            <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/2.webp" alt="gallery" />
+                        <div class="caption">
+                            4
+                            <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/3.webp" alt="gallery" />
+                        <div class="caption">
+                            6
+                            <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/7.jpg" alt="gallery" />
+                        <div class="caption">
+                            7  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/8.jpg" alt="gallery" />
+                        <div class="caption">
+                            8  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/10.webp" alt="gallery" />
+                        <div class="caption">
+                            9  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/1.webp" alt="gallery" />
+                        <div class="caption">
+                            10  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/4.webp" alt="gallery" />
+                        <div class="caption">
+                            11  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/3.webp" alt="gallery" />
+                        <div class="caption">
+                            12  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/4.webp" alt="gallery" />
+                        <div class="caption">
+                            13  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/10.webp" alt="gallery" />
+                        <div class="caption">
+                            14  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/11.webp" alt="gallery" />
+                        <div class="caption">
+                            15  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/12.webp" alt="gallery" />
+                        <div class="caption">
+                            16  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/person.webp" alt="gallery" />
+                        <div class="caption">
+                            16  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/4.webp" alt="gallery" />
+                        <div class="caption">
+                            17  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/7.jpg" alt="gallery" />
+                        <div class="caption">
+                            18  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/person.webp" alt="gallery" />
+                        <div class="caption">
+                            19  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="item">
+                        <img src="img/5.webp" alt="gallery" />
+                        <div class="caption">
+                            20  <div class="icon">
+                                <box-icon name='trash'></box-icon>
+                            </div>
+                        </div>
+                   
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="prev">Prev</div>
+                    <div class="page">Page <span class="page-num"></span></div>
+                    <div class="next">Next</div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </div>
+
+
+
+    <script>
+        // getting all required elements
+        const inputBox = document.querySelector(".inputField input");
+        const addBtn = document.querySelector(".inputField button");
+        const todoList = document.querySelector(".todoList");
+        const deleteAllBtn = document.querySelector(".footer button");
+
+        // onkeyup event
+        inputBox.onkeyup = () => {
+            let userEnteredValue = inputBox.value; //getting user entered value
+            if (userEnteredValue.trim() != 0) { //if the user value isn't only spaces
+                addBtn.classList.add("active"); //active the add button
+            } else {
+                addBtn.classList.remove("active"); //unactive the add button
+            }
+        }
+
+        showTasks(); //calling showTask function
+
+        addBtn.onclick = () => { //when user click on plus icon button
+            let userEnteredValue = inputBox.value; //getting input field value
+            let getLocalStorageData = localStorage.getItem("New Todo"); //getting localstorage
+            if (getLocalStorageData == null) { //if localstorage has no data
+                listArray = []; //create a blank array
+            } else {
+                listArray = JSON.parse(getLocalStorageData);  //transforming json string into a js object
+            }
+            listArray.push(userEnteredValue); //pushing or adding new value in array
+            localStorage.setItem("New Todo", JSON.stringify(listArray)); //transforming js object into a json string
+            showTasks(); //calling showTask function
+            addBtn.classList.remove("active"); //unactive the add button once the task added
+        }
+
+        function showTasks() {
+            let getLocalStorageData = localStorage.getItem("New Todo");
+            if (getLocalStorageData == null) {
+                listArray = [];
+            } else {
+                listArray = JSON.parse(getLocalStorageData);
+            }
+            const pendingTasksNumb = document.querySelector(".pendingTasks");
+            pendingTasksNumb.textContent = listArray.length; //passing the array length in pendingtask
+            if (listArray.length > 0) { //if array length is greater than 0
+                deleteAllBtn.classList.add("active"); //active the delete button
+            } else {
+                deleteAllBtn.classList.remove("active"); //unactive the delete button
+            }
+            let newLiTag = "";
+            listArray.forEach((element, index) => {
+                newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span></li>`;
+            });
+            todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
+            inputBox.value = ""; //once task added leave the input field blank
+        }
+
+        // delete task function
+        function deleteTask(index) {
+            let getLocalStorageData = localStorage.getItem("New Todo");
+            listArray = JSON.parse(getLocalStorageData);
+            listArray.splice(index, 1); //delete or remove the li
+            localStorage.setItem("New Todo", JSON.stringify(listArray));
+            showTasks(); //call the showTasks function
+        }
+
+        // delete all tasks function
+        deleteAllBtn.onclick = () => {
+            listArray = []; //empty the array
+            localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
+            showTasks(); //call the showTasks function
+        }
+
+
+
+        const galleryItems=document.querySelector(".gallery-items").children;
+ const prev=document.querySelector(".prev");
+ const next=document.querySelector(".next");
+ const page=document.querySelector(".page-num");
+ const maxItem=8;
+ let index=1;
+  
+  const pagination=Math.ceil(galleryItems.length/maxItem);
+  console.log(pagination)
+
+  prev.addEventListener("click",function(){
+    index--;
+    check();
+    showItems();
+  })
+  next.addEventListener("click",function(){
+  	index++;
+  	check();
+    showItems();  
+  })
+
+  function check(){
+  	 if(index==pagination){
+  	 	next.classList.add("disabled");
+  	 }
+  	 else{
+  	   next.classList.remove("disabled");	
+  	 }
+
+  	 if(index==1){
+  	 	prev.classList.add("disabled");
+  	 }
+  	 else{
+  	   prev.classList.remove("disabled");	
+  	 }
+  }
+
+  function showItems() {
+  	 for(let i=0;i<galleryItems.length; i++){
+  	 	galleryItems[i].classList.remove("show");
+  	 	galleryItems[i].classList.add("hide");
+
+
+  	    if(i>=(index*maxItem)-maxItem && i<index*maxItem){
+  	 	  // if i greater than and equal to (index*maxItem)-maxItem;
+  		  // means  (1*8)-8=0 if index=2 then (2*8)-8=8
+          galleryItems[i].classList.remove("hide");
+          galleryItems[i].classList.add("show");
+  	    }
+  	    page.innerHTML=index;
+  	 }
+
+  	 	
+  }
+
+  window.onload=function(){
+  	showItems();
+  	check();
+  }
+
+
+var a = document.getElementById("kkk");
+
+ removeImg=()=>{
+     kkk.scr="";
+ }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
